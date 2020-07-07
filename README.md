@@ -17,7 +17,7 @@ You can also use Derivator to tokenize sentences:
 
 ```
 derivator = Derivator()
-print(derivator.derive('they allegedly love pseudoscience'))
+print(derivator.tokenize('they allegedly love pseudoscience'))
 
 >> ['they', 'allegedly', 'love', 'pseudo_', 'science']
 ``` 
@@ -28,7 +28,7 @@ which contains many morphologically complex words.
 For a more aggressive segmentation, you can specify that Derivator should only use the `n_stems` most frequent stems:
 ```
 derivator = Derivator(n_stems=5000)
-print(derivator.derive('they allegedly love pseudoscience'))
+print(derivator.tokenize('they allegedly love pseudoscience'))
 
 >> ['they', 'alleged _ly', 'love', 'pseudo_', 'science']
 ``` 
