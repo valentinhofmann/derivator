@@ -22,10 +22,10 @@ print(derivator.derive('they allegedly love pseudoscience'))
 >> ['they', 'allegedly', 'love', 'pseudo_', 'science']
 ``` 
 
-If you are interested in specific morphological families, you can add easily add stems to `data/stems.txt`. 
-The list of stems included in the repository is a filtered version of the BERT vocabulary,
-which is large and contains many morphologically complex words.
-For a more aggressive segmentation, you can specify that Derivator should only use the $n$ most frequent stems:
+If you are interested in specific morphological families, you can easily add them to `data/stems.txt`. 
+The included list of stems is a filtered version of the BERT vocabulary,
+which contains many morphologically complex words.
+For a more aggressive segmentation, you can specify that Derivator should only use the `n_stems` most frequent stems:
 ```
 derivator = Derivator(n_stems=5000)
 print(derivator.derive('they allegedly love pseudoscience'))
