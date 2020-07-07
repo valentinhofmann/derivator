@@ -14,7 +14,7 @@ def main():
     print(derivator.tokenize(s))
 
     derivator = Derivator(n_stems=5000)
-    print(derivator.tokenize(s)
+    print(derivator.tokenize(s))
 
 
 if __name__ == '__main__':
