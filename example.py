@@ -11,8 +11,8 @@ def main():
     print(derivator.tokenize(s.split()))
 
     derivator = Derivator(n_stems=5000)
-    print(derivator.tokenize(s.split()))
-    
+    print(derivator.tokenize(s.split(), mode='bundles'))
+
 
 if __name__ == '__main__':
     main()

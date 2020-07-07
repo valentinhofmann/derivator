@@ -144,7 +144,7 @@ class Derivator:
                     output.extend(d[0])
                 output.append(d[1])
                 if len(d[2]) > 0:
-                    output.extend([2])
+                    output.extend(d[2])
 
         return output
 
