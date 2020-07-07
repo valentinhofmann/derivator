@@ -5,13 +5,16 @@ from derivator import Derivator
 
 def main():
 
+    derivator = Derivator()
+    print(derivator.derive("pseudoscience"))
+
     s = "they allegedly love pseudoscience"
 
     derivator = Derivator()
-    print(derivator.tokenize(s.split()))
+    print(derivator.tokenize(s))
 
     derivator = Derivator(n_stems=5000)
-    print(derivator.tokenize(s.split(), mode='bundles'))
+    print(derivator.tokenize(s)
 
 
 if __name__ == '__main__':

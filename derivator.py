@@ -129,6 +129,10 @@ class Derivator:
 
     def tokenize(self, form_list, mode='bundles'):
 
+        if isinstance(form_list, str):
+
+            form_list = form_list.strip().split()
+
         output = list()
 
         for f in form_list:
