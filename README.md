@@ -30,5 +30,5 @@ For a more aggressive segmentation, you can specify that Derivator should only u
 derivator = Derivator(n_stems=5000)
 print(derivator.tokenize('they allegedly love pseudoscience'))
 
->> ['they', 'alleged _ly', 'love', 'pseudo_', 'science']
+>> ['they', 'alleged', _ly', 'love', 'pseudo_', 'science']
 ``` 
